@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f5">
+  <meta name="description" content="Academic portfolio of Akshay Anand, PhD Research Scholar at NIT Calicut. Research interests include vision-language models, multimodal learning, and handwritten mathematical expression recognition.">
+  <meta property="og:title" content="Akshay Anand — Computer Science Researcher">
+  <meta property="og:description" content="Research in vision-language models, multimodal learning, and handwritten mathematical expression recognition.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <title>Akshay Anand | Computer Science Researcher</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Akshay Anand",
+    "jobTitle": "PhD Research Scholar",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "National Institute of Technology Calicut"
+    },
+    "email": "mailto:akshayanand049@gmail.com",
+    "knowsAbout": [
+      "Vision-language models",
+      "Multimodal learning",
+      "Handwritten mathematical expression recognition",
+      "Computer vision",
+      "Parameter-efficient fine-tuning"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="wordmark" href="#home" aria-label="Akshay Anand, home">Akshay Anand<span>.</span></a>
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primaryNav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#teaching">Teaching</a>
+        <a href="#education">Education</a>
+        <a href="#honors">Honors</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cv" href="assets/akshay_anand_cv.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> COMPUTER SCIENCE · NIT CALICUT</p>
+          <h1 id="hero-title">Akshay Anand</h1>
+          <p class="hero-role">PhD Research Scholar · Computer Science</p>
+          <p class="hero-summary">I study how vision-language models can recognize and understand handwritten mathematical expressions, particularly when visual ambiguity makes interpretation difficult.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#research">Explore research <span aria-hidden="true">↗</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch</a>
+            <a class="text-action" href="assets/akshay_anand_cv.pdf" download>Academic CV ↓</a>
+          </div>
+          <ul class="profile-links" id="heroProfileLinks" aria-label="Academic and professional profiles"></ul>
+        </div>
+        <figure class="hero-portrait">
+          <img src="/assets/hero.png" alt="Portrait of Akshay Anand" width="520" height="520" fetchpriority="high" decoding="async">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="about" aria-labelledby="about-title">
+      <div class="container narrow-container">
+        <p class="section-kicker">01 / PROFILE</p>
+        <h2 class="section-title" id="about-title">About</h2>
+        <div class="prose">
+          <p>I am a PhD Research Scholar in Computer Science at the National Institute of Technology Calicut. My doctoral research focuses on handwritten mathematical and scientific expression recognition and understanding.</p>
+          <p>My work explores adapting vision-language models to challenging visual inputs using parameter-efficient fine-tuning methods such as LoRA. I am particularly interested in evaluating performance beyond aggregate metrics by studying ambiguity-critical cases, conducting controlled experiments, and analysing model errors.</p>
+          <p>My broader interests include multimodal learning, computer vision, OCR, robust model evaluation, and practical machine-learning systems.</p>
+        </div>
+        <div class="interest-list" aria-label="Research interests">
+          <span>Vision-language models</span>
+          <span>Multimodal learning</span>
+          <span>Handwritten expression recognition</span>
+          <span>LoRA / PEFT</span>
+          <span>Evaluation and error analysis</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <p class="section-kicker">02 / RESEARCH</p>
+        <div class="section-heading-row">
+          <div>
+            <h2 class="section-title" id="research-title">Selected research work</h2>
+            <p class="section-intro">Research themes, methods, and engineering contributions from my work on handwritten mathematical expression recognition.</p>
+          </div>
+        </div>
+        <div class="research-grid" id="researchGrid">
+          <article class="research-card research-card-featured">
+            <div class="research-card-top"><span class="tag">Manuscript under review</span><span class="research-number">R01</span></div>
+            <h3>CaMER: Confusion-aware Adaptation of Vision-Language Models for Handwritten Mathematical Expression Recognition</h3>
+            <p>Adapts Qwen2.5-VL-3B using LoRA and studies recognition behaviour on ambiguous handwritten mathematical expressions.</p>
+            <div class="metric-grid">
+              <div class="metric"><span class="metric-label">Overall ExpRate</span><strong>51.49% <span aria-hidden="true">→</span> 54.61%</strong></div>
+              <div class="metric"><span class="metric-label">Ambiguity-critical ExpRate</span><strong>32.18% <span aria-hidden="true">→</span> 48.72%</strong></div>
+            </div>
+            <details class="research-details">
+              <summary>Research details</summary>
+              <div class="details-content">
+                <h4>Research question</h4>
+                <p>How can a vision-language model be adapted to improve recognition of handwritten mathematical expressions, with particular attention to visually ambiguous cases?</p>
+                <h4>Method</h4>
+                <p>The work applies LoRA-based adaptation to Qwen2.5-VL-3B and uses an ambiguity-focused evaluation protocol alongside aggregate recognition metrics.</p>
+                <h4>Evaluation</h4>
+                <p>Experiments use MathWriting, CROHME, and HME100K. The reported results are specific to the evaluated setup; they should be interpreted alongside the manuscript's full experimental protocol.</p>
+                <h4>Implementation</h4>
+                <p>29.93 million trainable parameters (reported as 0.79% of the model), with PyTorch and PyTorch Lightning training/evaluation workflows.</p>
+                <p class="status-note">Manuscript status: under review. A venue, DOI, preprint, or public code link has not been supplied.</p>
+              </div>
+            </details>
+          </article>
+          <article class="research-card">
+            <div class="research-card-top"><span class="tag">Evaluation design</span><span class="research-number">R02</span></div>
+            <h3>Ambiguity-focused evaluation</h3>
+            <p>Designed an evaluation protocol that examines confusion-critical expression pairs alongside aggregate performance to better understand recognition behaviour on ambiguous inputs.</p>
+            <details class="research-details">
+              <summary>Research details</summary>
+              <div class="details-content">
+                <h4>Focus</h4>
+                <p>Complement overall Exact Match Rate with targeted analysis of ambiguity-critical cases and inspect where model predictions diverge from expected expressions.</p>
+                <h4>Methods</h4>
+                <p>Controlled comparisons, qualitative inspection, ablation studies, and systematic error analysis.</p>
+              </div>
+            </details>
+          </article>
+          <article class="research-card">
+            <div class="research-card-top"><span class="tag">Research engineering</span><span class="research-number">R03</span></div>
+            <h3>HMER training and evaluation pipeline</h3>
+            <p>Built reproducible training and evaluation workflows for handwritten mathematical expression recognition across established benchmark datasets.</p>
+            <details class="research-details">
+              <summary>Research details</summary>
+              <div class="details-content">
+                <h4>Engineering</h4>
+                <p>PyTorch and PyTorch Lightning pipelines with bfloat16 mixed precision, gradient accumulation, checkpointing, and experiment resumption.</p>
+                <h4>Compute environment</h4>
+                <p>Experiments were run using NVIDIA A100 80 GB and V100 32 GB GPUs.</p>
+              </div>
+            </details>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="publications" aria-labelledby="publications-title">
+      <div class="container">
+        <p class="section-kicker">03 / SCHOLARLY OUTPUT</p>
+        <h2 class="section-title" id="publications-title">Publications &amp; manuscripts</h2>
+        <p class="section-intro">Manuscript status is stated as provided; no publication venue or DOI is claimed.</p>
+        <div class="publication-list" id="publicationList">
+          <article class="publication-entry">
+            <span class="publication-year">2026</span>
+            <div>
+              <p class="publication-status">Manuscript under review</p>
+              <h3>CaMER: Confusion-aware Adaptation of Vision-Language Models for Handwritten Mathematical Expression Recognition</h3>
+              <p>Research on confusion-aware adaptation of vision-language models for handwritten mathematical expression recognition.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="teaching" aria-labelledby="teaching-title">
+      <div class="container">
+        <p class="section-kicker">04 / TEACHING</p>
+        <h2 class="section-title" id="teaching-title">Teaching &amp; academic experience</h2>
+        <div class="timeline" id="experienceList">
+          <article class="timeline-entry">
+            <div class="timeline-date">Jan 2024 – Jun 2024</div>
+            <div><h3>Assistant Professor (Ad-hoc)</h3><p class="timeline-org">Government College Thalassery, Kerala</p><ul><li>Taught Machine Learning and Deep Learning to approximately 40 undergraduate and 12 postgraduate students.</li><li>Conducted machine-learning laboratory sessions and evaluated coursework and examinations.</li></ul></div>
+          </article>
+          <article class="timeline-entry">
+            <div class="timeline-date">During doctoral research</div>
+            <div><h3>Teaching and laboratory responsibilities</h3><p class="timeline-org">National Institute of Technology Calicut</p><ul><li>Handled Data Structures and Algorithms / Program Design laboratory sessions, including practical evaluation.</li></ul></div>
+          </article>
+          <article class="timeline-entry">
+            <div class="timeline-date">Aug 2024 – Present</div>
+            <div><h3>PhD Research Scholar</h3><p class="timeline-org">Department of Computer Science and Engineering · NIT Calicut</p><ul><li>Conducting research on vision-language models for handwritten mathematical expression recognition.</li><li>Developing model adaptation, evaluation, and training workflows.</li></ul></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <p class="section-kicker">05 / EDUCATION</p>
+        <h2 class="section-title" id="education-title">Academic background</h2>
+        <div class="education-grid" id="educationList">
+          <article class="education-entry"><p class="education-date">Aug 2024 – Present · Expected 2029</p><h3>PhD in Computer Science</h3><p>National Institute of Technology Calicut, India</p><p class="education-detail">Research: Handwritten Mathematical and Scientific Expression Recognition and Understanding.</p></article>
+          <article class="education-entry"><p class="education-date">2023</p><h3>MSc Computer Science with Specialization in Artificial Intelligence</h3><p>Kannur University, India</p><p class="education-detail">86.69% · University Rank 1</p></article>
+          <article class="education-entry"><p class="education-date">2021</p><h3>BSc Computer Science</h3><p>Kannur University, India</p><p class="education-detail">90.02% · University Rank 4</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <p class="section-kicker">06 / TOOLKIT</p>
+        <h2 class="section-title" id="skills-title">Methods &amp; technical skills</h2>
+        <div class="skills-grid" id="skillsGrid">
+          <article class="skill-group"><h3>AI &amp; machine learning</h3><p>Vision-language models, multimodal learning, transformers, computer vision, OCR / HMER, LoRA, parameter-efficient fine-tuning, attention, sequence modelling, beam search.</p></article>
+          <article class="skill-group"><h3>Frameworks &amp; libraries</h3><p>PyTorch, PyTorch Lightning, Hugging Face Transformers, TensorFlow, OpenCV, scikit-learn, NumPy, Pandas.</p></article>
+          <article class="skill-group"><h3>Research methods</h3><p>Experimental design, controlled experiments, ablation studies, baseline reproduction, error analysis, hyperparameter optimisation, evaluation design.</p></article>
+          <article class="skill-group"><h3>Programming &amp; systems</h3><p>Python, C/C++, SQL, Linux, Git, CUDA, Docker, LaTeX.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-muted" id="honors" aria-labelledby="honors-title">
+      <div class="container">
+        <p class="section-kicker">07 / RECOGNITION</p>
+        <h2 class="section-title" id="honors-title">Honors &amp; qualifications</h2>
+        <div class="honors-grid" id="achievementsList">
+          <article class="honor-entry"><p class="honor-date">December 2023</p><h3>NTA-UGC NET Junior Research Fellowship (JRF)</h3><p>National Testing Agency</p></article>
+          <article class="honor-entry"><p class="honor-date">December 2022</p><h3>NTA-UGC NET Assistant Professor Qualification</h3><p>National Testing Agency</p></article>
+          <article class="honor-entry"><p class="honor-date">2023</p><h3>University Rank 1</h3><p>MSc Computer Science with AI Specialization · 86.69%</p></article>
+          <article class="honor-entry"><p class="honor-date">2021</p><h3>University Rank 4</h3><p>BSc Computer Science · 90.02%</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div>
+          <p class="section-kicker">08 / CONTACT</p>
+          <h2 class="section-title" id="contact-title">Research conversations welcome.</h2>
+          <p class="section-intro">For research discussions, academic collaboration, or relevant opportunities, please get in touch by email or through a professional profile.</p>
+        </div>
+        <div class="contact-panel">
+          <a class="contact-email" href="mailto:akshayanand049@gmail.com">akshayanand049@gmail.com <span aria-hidden="true">↗</span></a>
+          <p>National Institute of Technology Calicut<br>Kerala, India</p>
+          <ul class="contact-profiles" id="contactProfileLinks"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="wordmark" href="#home">Akshay Anand<span>.</span></a>
+      <p>Computer Science Research · NIT Calicut</p>
+      <p class="last-updated">Last updated: <time datetime="2026-10-22">22 October 2026</time></p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
