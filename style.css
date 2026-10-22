@@ -543,6 +543,7 @@ ul { padding-left: 1.25rem; }
     display: flex;
     flex-direction: column;
     visibility: visible;
+   height:100vh;
     opacity: 1;
     transform: translateY(0);
   }
